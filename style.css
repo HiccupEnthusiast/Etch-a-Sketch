@@ -1,0 +1,30 @@
+body {
+    background-color: #181A1B;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid {
+    display: flex;
+    height: 90vh;
+    width: 90vh;
+}
+.cell {
+    display: flex;
+    flex-grow: 1;
+    min-width: 5px;
+    min-height: 5px;
+    background-color: pink;
+    border: 2px solid salmon;
+}
+.column {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
