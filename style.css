@@ -23,6 +23,10 @@ body {
     background-color: pink;
     border: 2px solid salmon;
 }
+.cell.color-toggle {
+    background-color: #181A1B;
+    border: 2px solid black
+}
 .column {
     display: flex;
     flex-grow: 1;

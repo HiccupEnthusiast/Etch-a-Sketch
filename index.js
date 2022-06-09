@@ -10,8 +10,13 @@ function createGrid(rows, columns) {
             let createdCell = document.createElement('div');
             createdCell.className = 'cell';
             createdCell.id = `${i} ${j}`;
+            createdCell.addEventListener('mouseover', toggleColor);
             column.appendChild(createdCell);
         }
         grid.appendChild(column);
-    }    
+    };    
 };
+
+function toggleColor() {
+    this.classList.toggle("color-toggle");
+}
