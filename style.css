@@ -18,8 +18,6 @@ body {
 .cell {
     display: flex;
     flex-grow: 1;
-    min-width: 5px;
-    min-height: 5px;
     background-color: pink;
     border: 2px solid salmon;
 }
