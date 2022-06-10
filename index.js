@@ -5,14 +5,16 @@ let x = 16;
 let y = 16;
 
 resetBtn.addEventListener('click', () => {
-    y = Number(prompt("Insert number of rows: ", '16'));
-    x = Number(prompt('Insert number of columns: ', '16'));
-    if (!isNaN(x) && !isNaN(y)){
+    y = Math.abs(Number(prompt("Insert number of rows: ", '16')));
+    x = Math.abs(Number(prompt('Insert number of columns: ', '16')));
+    if (isNaN(x) || isNaN(y)){
+        alert("Invalid input!");
+    }else if (x > 100 || y > 100) {
+        alert("The grid can't be that big!");
+    } else {
         clearGrid();
         createGrid(x, y);
-    } else {
-        alert('Invalid input!');
-    }
+    }    
 });
 
 createGrid(x, y);
